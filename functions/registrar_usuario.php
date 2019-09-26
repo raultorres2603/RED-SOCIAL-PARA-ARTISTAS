@@ -12,12 +12,13 @@ $num_rows	= mysqli_num_rows($exito);
 
 if($num_rows >= 1) {
 	
-echo("NO_EMAIL");
+echo("YA_REGISTRADO");
 
 } Else {
 
 $sql1	= "INSERT INTO usuario(email,usuario,password) VALUES ('$email','$usuario','$pass')";
 $exito1	= mysqli_query($conmysql,$sql1);
 
-echo("YES_EMAIL");
+echo("NO_REGISTRADO");
+
 }

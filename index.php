@@ -32,11 +32,11 @@ $(document).ready(function(){
             data: {email:email, usuario:usuario, pass:pass},
 			success: function(response) {
 				
-				if (response.match("NO_EMAIL")) {
+				if (response.match("YA_REGISTRADO")) {
 					
 					alert("Éste e-mail ya está registrado. Prueba con otro.");
 					
-				} else if (response.match("YES_EMAIL")) {
+				} else if (response.match("NO_REGISTRADO")) {
 					
 					alert("Cuenta registrada!");
 				}
