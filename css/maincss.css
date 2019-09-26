@@ -1,0 +1,42 @@
+.carousel-inner img {
+	width:	100%; 
+	height:	100%;
+}
+
+.modal-title {
+	text-align:		center;
+	font-size:		30px;
+	font-family:	bold;
+	color:			white;
+}
+
+.modal-body {
+	font-size:		15px;
+	font-family:	bold;
+}
+
+.modal-header {
+	background-color:	black;
+}
+
+.modal-footer {
+	background-color:	white;
+}
+
+#botoncerrarmodal {
+	background-color:	red;
+	font-weight:		bold;
+	color:				white;
+}
+
+.navbar-brand {
+	color: W
+}
+
+.dropdown-menu {
+	background-color:	black;
+}
+
+.dropdown-menu li a {
+	color:	white;
+}
