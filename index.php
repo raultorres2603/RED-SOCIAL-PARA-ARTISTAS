@@ -1,4 +1,9 @@
 <?php
+/*
+Author: Raúl Torres ©
+Name: Notes&Chords
+
+*/
 include("./functions/conexionMysql.php");
 session_start();
 
