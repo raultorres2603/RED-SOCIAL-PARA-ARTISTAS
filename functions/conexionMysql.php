@@ -1,5 +1,5 @@
 <?php
-// CONNEXIO BD MICROBOOK 
+
 $cfgConMySql['Servidor']='localhost';
 $cfgConMySql['NomBD']='noteschords';
 $cfgConMySql['Usuari']='root';
