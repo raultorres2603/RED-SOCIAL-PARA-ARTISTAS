@@ -37,7 +37,7 @@
 	} Else if (isset($_SESSION["login"])) {
 	?>
 	<button class="btn btn-danger navbar-btn"><?php echo($_SESSION["login"]);?></button>
-	<button class="btn btn-danger navbar-btn"><?php session_destroy(); header("location:./index.php");?></button>
+	 <img src="./img/icono-salir.png" id="iconosalir" <?php session_destroy()?>> 
 	<?php
 	}
 	?>
