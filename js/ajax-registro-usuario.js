@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
     $("#registrarbotonuser").click(function(){
         var email = $("#exampleInputEmail1").val();
         var usuario = $("#exampleInputText1").val();
@@ -21,6 +22,7 @@ $(document).ready(function(){
                       }
         });
     });
+	
 	$("#logearbotonuser").click(function(){
         var usuario = $("#exampleInputText2").val();
         var pass = $("#exampleInputPassword2").val();
