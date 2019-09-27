@@ -9,6 +9,7 @@ $exito		= mysqli_query($conmysql,$sql);
 $num_rows	= mysqli_num_rows($exito);
 
 if($num_rows >= 1) {
+	
 echo("CORRECTO");
 
 session_start();

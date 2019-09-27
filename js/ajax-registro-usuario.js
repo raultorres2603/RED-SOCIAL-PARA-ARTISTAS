@@ -36,7 +36,7 @@ $(document).ready(function(){
 					
 					
 				} else {
-					alert("Login correcto! Refresca la página para acceder.")
+					alert("Login correcto! Re-carga la página para continuar! ")
 				}
                       }
         });

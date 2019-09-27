@@ -36,8 +36,8 @@
 	<?php
 	} Else if (isset($_SESSION["login"])) {
 	?>
-	<button class="btn btn-danger navbar-btn"><?php echo($_SESSION["login"]);?></button>
-	 <img src="./img/icono-salir.png" id="iconosalir" <?php session_destroy()?>> 
+	<button class="btn btn-danger navbar-btn"><?php echo("Usuario: " . $_SESSION["login"]);?></button>
+	<a href="./functions/destroy_session.php"><img id="iconosalir" src="./img/icono-salir.png"></a>
 	<?php
 	}
 	?>
