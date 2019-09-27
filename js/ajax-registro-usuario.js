@@ -21,4 +21,24 @@ $(document).ready(function(){
                       }
         });
     });
+	$("#logearbotonuser").click(function(){
+        var usuario = $("#exampleInputText2").val();
+        var pass = $("#exampleInputPassword2").val();
+		
+        $.ajax({
+            type: "POST",
+            url: "./functions/logear_usuario.php",
+            data: {usuario:usuario, pass:pass},
+			success: function(response) {
+				if (response.match("ERRONEO")) {
+					
+					alert("Email o contraseña erroneas.");
+					
+					
+				} else {
+					alert("Login correcto! Refresca la página para acceder.")
+				}
+                      }
+        });
+    });
 });

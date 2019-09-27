@@ -29,7 +29,18 @@
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
+	<?php
+	If (!isset($_SESSION["login"])) {
+	?>
 	<button class="btn btn-danger navbar-btn"  data-toggle="modal" data-target="#myModal2">Sign up / Login</button>
+	<?php
+	} Else if (isset($_SESSION["login"])) {
+	?>
+	<button class="btn btn-danger navbar-btn"><?php echo($_SESSION["login"]);?></button>
+	<button class="btn btn-danger navbar-btn"><?php session_destroy(); header("location:./index.php");?></button>
+	<?php
+	}
+	?>
     </ul>
   </div>
 </nav>
@@ -96,11 +107,27 @@
     <label class="form-check-label" for="exampleCheck1">Acepto las Politicas de uso de la aplicación Notes&Chords </label>
   </div>
   <button type="button" class="btn btn-primary" id="registrarbotonuser">Registrarme!</button>
-  <button type="button" class="btn btn-primary" id="botoncambio" data-toggle="modal" data-target="#myModal3">Login!</button>
+</form>
+ <div class="modal-header">
+        <h4 class="modal-title"> Login! </h4>
+      </div>
+      </div>
+      <div class="modal-body">
+        <form method="POST" action="./functions/logear_usuario.php">
+   <div class="form-group">
+    <label for="exampleInputEmail1">Usuario</label>
+    <input type="text" class="form-control" id="exampleInputText2" name="usuario" aria-describedby="emailHelp" placeholder="Introduce tu usuario" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Contraseña</label>
+    <input type="password" class="form-control" id="exampleInputPassword2" name="passlogin" placeholder="Introduce aquí tu contraseña" required>
+  </div>
+  <button type="button" class="btn btn-primary" id="logearbotonuser">Login</button>
 </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" id="botoncerrarmodal" data-dismiss="modal">Close</button>
+      </div>
       </div>
     </div>
 
