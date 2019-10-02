@@ -6,7 +6,6 @@ Name: Notes&Chords
 */
 include("./functions/conexionMysql.php");
 session_start();
-$error = $_GET["error"];
 ?>
 <html>
 <head>
