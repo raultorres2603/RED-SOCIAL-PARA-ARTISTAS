@@ -1,16 +1,20 @@
+/**
+*@author RaúlTorres
+*/
+
 $(document).ready(function(){
 	
     $("#registrarbotonuser").click(function(){
 		/**
-		*@type{email}
+		*@type{string}
 		*/
         var email = $("#exampleInputEmail1").val();
 		/**
-		*@type{text}
+		*@type{string}
 		*/
         var usuario = $("#exampleInputText1").val();
 		/**
-		*@type{password}
+		*@type{string}
 		*/
         var pass = $("#exampleInputPassword1").val();
 		
@@ -19,8 +23,8 @@ $(document).ready(function(){
             url: "./functions/registrar_usuario.php",
             data: {email:email, usuario:usuario, pass:pass},
 			/**
-			*@summary Nos devolverá una alerta dependiendo de si el e-mail está registrado o no.
-			*/
+		*@summary Ajax que manda datos para poder hacer el Registro
+		*/
 			success: function(response) {
 				
 				if (response.match("YA_REGISTRADO")) {
@@ -37,11 +41,11 @@ $(document).ready(function(){
 	
 	$("#logearbotonuser").click(function(){
 		/**
-		*@type{text}
+		*@type{string}
 		*/
         var usuario = $("#exampleInputText2").val();
 		/**
-		*@type{password}
+		*@type{string}
 		*/
         var pass = $("#exampleInputPassword2").val();
 		
@@ -50,8 +54,8 @@ $(document).ready(function(){
             url: "./functions/logear_usuario.php",
             data: {usuario:usuario, pass:pass},
 			/**
-			*@summary Nos devolverá una alerta dependiendo de si el usuario y la contraseña són correctas o no.
-			*/
+		*@summary Ajax que manda datos para poder hacer el Login
+		*/
 			success: function(response) {
 				if (response.match("ERRONEO")) {
 					
