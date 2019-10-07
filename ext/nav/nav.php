@@ -23,12 +23,6 @@
         </ul>
       </li>
       <li><a href="#">Publicar anuncio</a></li>
-	  <form class="navbar-form navbar-left" action="/action_page.php">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search">
-      </div>
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
 	<?php
 	If (!isset($_SESSION["login"])) {
 	?>
@@ -82,6 +76,7 @@
 
     <!-- Modal content-->
     <div class="modal-content">
+	<div id="registro">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title"> Sign up! </h4>
@@ -108,11 +103,13 @@
   </div>
   <button type="button" class="btn btn-primary" id="registrarbotonuser">Registrarme!</button>
 </form>
+</div>
+</div>
+<div id="login" hidden>
  <div class="modal-header">
         <h4 class="modal-title"> Login! </h4>
       </div>
-      </div>
-      <div class="modal-body">
+	  <div class="modal-body">
         <form method="POST" action="./functions/logear_usuario.php">
    <div class="form-group">
     <label for="exampleInputEmail1">Usuario</label>
@@ -124,12 +121,14 @@
   </div>
   <button type="button" class="btn btn-primary" id="logearbotonuser">Login</button>
 </form>
-      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" id="botoncerrarmodal" data-dismiss="modal">Close</button>
       </div>
-      </div>
+	  </div>
+	  </div>
+	   <center>
+	  	<button id="cambiarform" class="btn btn-danger navbar-btn">Sign Up / Login</button>
+		<center>
     </div>
-
   </div>
 </div>	

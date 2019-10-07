@@ -2,6 +2,8 @@
 *@author RaúlTorres
 */
 
+	var formvisible = 'Registro';
+			
 $(document).ready(function(){
 	
     $("#registrarbotonuser").click(function(){
@@ -68,4 +70,27 @@ $(document).ready(function(){
                       }
         });
     });
+	
+	$("#cambiarform").click(function(){
+		/**
+		*@summary Mostrar u ocultar dependiendo de la variable formvisible
+		*/
+			switch(formvisible) {
+				
+				case 'Registro':
+				document.getElementById('registro').style.display = 'none';
+				document.getElementById('login').style.display = 'block';
+				formvisible = 'Login';
+				console.log('formvisible = Login');
+				break;
+				
+				case 'Login':
+				document.getElementById('registro').style.display = 'block';
+				document.getElementById('login').style.display = 'none';
+				formvisible = 'Registro';
+				console.log('formvisible = Registro');
+				break;
+				
+			}
+			 });
 });

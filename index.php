@@ -9,8 +9,8 @@ session_start();
 ?>
 <html>
 <head>
-<title>Notes&Chords</title>
-<?php 
+<title>Notes&Chords </title>
+<?php
 include("./ext/links/head.php");
 ?>
 </head>
