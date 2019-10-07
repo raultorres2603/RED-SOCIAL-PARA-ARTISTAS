@@ -121,9 +121,6 @@
   </div>
   <button type="button" class="btn btn-primary" id="logearbotonuser">Login</button>
 </form>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" id="botoncerrarmodal" data-dismiss="modal">Close</button>
-      </div>
 	  </div>
 	  </div>
 	   <center>
