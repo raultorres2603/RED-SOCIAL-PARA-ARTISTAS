@@ -26,7 +26,7 @@
 	<?php
 	If (!isset($_SESSION["login"])) {
 	?>
-	<button class="btn btn-danger navbar-btn"  data-toggle="modal" data-target="#myModal2">Sign up / Login</button>
+	<button class="btn btn-danger navbar-btn"  data-toggle="modal" data-target="#myModal2">Registrar / Iniciar sesión</button>
 	<?php
 	} Else if (isset($_SESSION["login"])) {
 	?>
@@ -79,7 +79,7 @@
 	<div id="registro">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title"> Sign up! </h4>
+        <h4 class="modal-title"> Registro! </h4>
       </div>
       <div class="modal-body">
         <form method="POST" action="./functions/registrar_usuario.php">
@@ -107,7 +107,7 @@
 </div>
 <div id="login" hidden>
  <div class="modal-header">
-        <h4 class="modal-title"> Login! </h4>
+        <h4 class="modal-title"> Iniciar sesión! </h4>
       </div>
 	  <div class="modal-body">
         <form method="POST" action="./functions/logear_usuario.php">
@@ -119,12 +119,12 @@
     <label for="exampleInputPassword1">Contraseña</label>
     <input type="password" class="form-control" id="exampleInputPassword2" name="passlogin" placeholder="Introduce aquí tu contraseña" required>
   </div>
-  <button type="button" class="btn btn-primary" id="logearbotonuser">Login</button>
+  <button type="button" class="btn btn-primary" id="logearbotonuser">Iniciar sesión</button>
 </form>
 	  </div>
 	  </div>
 	   <center>
-	  	<button id="cambiarform" class="btn btn-danger navbar-btn">Sign Up / Login</button>
+	  	<button id="cambiarform" class="btn btn-danger navbar-btn">Registrar / Iniciar sesión</button>
 		<center>
     </div>
   </div>

@@ -4,7 +4,7 @@ Author: Raúl Torres ©
 Name: Notes&Chords
 
 */
-include("./functions/conexionMysql.php");
+include_once("./functions/conexionMysql.php");
 session_start();
 ?>
 <html>
@@ -19,8 +19,8 @@ include("./ext/links/head.php");
 	<div class="row">
 		<div class="col-md-12">
 		<?php
-		include_once("./ext/nav/nav.php");
-		include_once("./ext/carrousel.php");
+		include("./ext/nav/nav.php");
+		include("./ext/carrousel.php");
 		?>
 
 	</div>
