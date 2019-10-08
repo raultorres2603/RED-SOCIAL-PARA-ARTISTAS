@@ -11,6 +11,7 @@ session_start();
 <head>
 <title>Notes&Chords </title>
 <?php
+/* Include de links */
 include("./ext/links/head.php");
 ?>
 </head>
@@ -19,7 +20,9 @@ include("./ext/links/head.php");
 	<div class="row">
 		<div class="col-md-12">
 		<?php
+		/* Include de la barra de navegación */
 		include("./ext/nav/nav.php");
+		/* Include del carrousel */
 		include("./ext/carrousel.php");
 		?>
 
