@@ -26,3 +26,4 @@ include("./ext/links/head.php");
 	</div>
 </div>
 </body>
+</html>
