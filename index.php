@@ -15,7 +15,7 @@ session_start();
 include("./ext/links/head.php");
 ?>
 </head>
-<body>
+<body id="index">
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-12">
