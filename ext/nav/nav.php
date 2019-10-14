@@ -26,7 +26,7 @@
 	<?php
 	If (!isset($_SESSION["login"])) {
 	?>
-	<button class="btn btn-danger navbar-btn"  data-toggle="modal" data-target="#myModal2">Registrar / Iniciar sesión</button>
+	<button class="btn btn-danger navbar-btn" id="registrareiniciarsesion" data-toggle="modal" data-target="#myModal2">Registrar / Iniciar sesión</button>
 	<?php
 	} Else if (isset($_SESSION["login"])) {
 	?>
@@ -67,7 +67,7 @@
     </div>
 
   </div>
-</div>	
+</div>
 
 <!-- MODAL REGISTRO/LOGIN USUARIO -->
 
@@ -128,4 +128,4 @@
 		<center>
     </div>
   </div>
-</div>	
+</div>
