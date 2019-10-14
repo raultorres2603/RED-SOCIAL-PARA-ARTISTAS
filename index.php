@@ -2,7 +2,6 @@
 /*
 Author: Raúl Torres ©
 Name: Notes&Chords
-
 */
 include_once("./functions/conexionMysql.php");
 session_start();
