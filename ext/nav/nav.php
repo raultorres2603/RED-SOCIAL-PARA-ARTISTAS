@@ -22,14 +22,15 @@
 		  ?>
         </ul>
       </li>
-      <li><a href="#">Publicar anuncio</a></li>
 	<?php
 	If (!isset($_SESSION["login"])) {
 	?>
+	  <li><a data-toggle="modal" data-target="#myModal2">Publicar anuncio</a></li>
 	<button class="btn btn-danger navbar-btn" id="registrareiniciarsesion" data-toggle="modal" data-target="#myModal2">Registrar / Iniciar sesión</button>
 	<?php
 	} Else if (isset($_SESSION["login"])) {
 	?>
+	<li><a href="#">Publicar anuncio</a></li>
 	<button class="btn btn-danger navbar-btn"><?php echo("Usuario: " . $_SESSION["login"]);?></button>
 	<a href="./functions/destroy_session.php"><img id="iconosalir" src="./img/icono-salir.png"></a>
 	<?php
