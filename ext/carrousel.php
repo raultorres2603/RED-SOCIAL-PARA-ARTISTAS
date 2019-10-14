@@ -9,14 +9,14 @@
   <div class="carousel-inner">
     <div class="item active">
 	<center>
-      <img src="img/welcome.jpg" alt="Los Angeles">
+      <img src="img/welcome.jpg">
 	  </center>
     </div>
 	<div class="item">
 	<center>
-      <img src="img/hazteconocer.jpg" alt="Los Angeles">
+      <img src="img/disfrutasientevive.jpg">
 	</center>
-    </div>	
+    </div>
 
   <!-- Left and right controls -->
   <a class="left carousel-control" href="#myCarousel" data-slide="prev">
