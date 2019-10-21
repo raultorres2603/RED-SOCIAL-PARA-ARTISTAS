@@ -1,15 +1,19 @@
+
 	<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Notes&Chords </a>
     </div>
-    <ul class="nav navbar-nav">
+		<div id="boton_menu">
+			<span class="glyphicon glyphicon-th-list pull-right" id="boton_menu_moviles"></span>
+		</div>
+    <ul class="nav navbar-nav" id="conjunto_navbar">
       <li><a href="index.php">Inicio</a></li>
       <li data-toggle="modal" data-target="#myModal"><a>¿Quienes somos?</a></li>
-       <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" id="menu">Buscar anuncios
+       <li class="dropdown" id="menu">
+        <a class="dropdown-toggle" data-toggle="dropdown" id="conjunto_menu_anuncios">Buscar anuncios
         <span class="caret"></span></a>
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu" id="dropdown_anuncios">
 		<?php
 		$sql = "SELECT genero FROM generomusical";
 	$result = mysqli_query($conmysql,$sql);
@@ -37,7 +41,7 @@
 	}
 	?>
     </ul>
-  </div>
+	</div>
 </nav>
 
 <!-- MODAL QUIENES SOMOS -->

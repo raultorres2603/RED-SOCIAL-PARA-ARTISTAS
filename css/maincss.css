@@ -4,10 +4,10 @@
 }
 
 .modal-title {
-	text-align:		center;
-	font-size:		30px;
-	font-family:	bold;
-	color:			white;
+	text-align: center;
+	font-size: 30px;
+	font-family: bold;
+	color: white;
 }
 
 .modal-body {
@@ -29,16 +29,13 @@
 	color:				white;
 }
 
-.navbar-brand {
-	color: W
-}
 
 .dropdown-menu {
 	background-color:	black;
 }
 
 .dropdown-menu li a {
-	color:	white;
+	color: white;
 }
 
 #iconosalir {
@@ -46,10 +43,41 @@
 	height:	30px;
 }
 
-#registrareiniciarsesion {
-	float:right;
-}
 
 #index {
 	background-color: black;
+}
+
+#boton_menu {
+	display: none;
+}
+
+.navbar-nav {
+	display: block;
+}
+
+@media only screen and (max-width:1024px) and (min-width:360px) {
+
+	.navbar-nav {
+	display: none;
+	}
+
+	#boton_menu {
+		display: block;
+		font-size: 35px;
+		color: gray;
+		margin-bottom: 40px;
+	}
+
+	.glyphicon-th-list:hover {
+		color: white;
+	}
+
+	.navbar-brand {
+		font-size: 20px;
+		display: block;
+		position: absolute;
+	}
+
+
 }
