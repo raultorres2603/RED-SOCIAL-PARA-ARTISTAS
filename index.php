@@ -3,7 +3,7 @@
 Author: Raúl Torres ©
 Name: Notes&Chords
 */
-include_once("./functions/conexionMysql.php");
+include("./functions/conexionMysql.php");
 session_start();
 ?>
 <html>

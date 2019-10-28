@@ -20,7 +20,7 @@
 	while ($row = mysqli_fetch_assoc($result)) {
 		$genero = $row["genero"];
 		?>
-          <li><a href="#">- <?php echo($genero);?></a></li>
+          <li><a href="anuncios.php?genero=$genero">- <?php echo($genero);?></a></li>
 		  <?php
 	}
 		  ?>
