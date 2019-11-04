@@ -5,6 +5,7 @@ Name: Notes&Chords
 */
 include("./functions/conexionMysql.php");
 session_start();
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
 ?>
 <html>
 <head>
@@ -24,7 +25,6 @@ include("./ext/links/head.php");
 		/* Include del carrousel */
 		include("./ext/carrousel.php");
 		?>
-
 	</div>
 </div>
 </body>

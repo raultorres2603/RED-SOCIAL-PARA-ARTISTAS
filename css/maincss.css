@@ -56,6 +56,22 @@
 	display: block;
 }
 
+#modal_perfil {
+	width: 90%;
+	height: 90%;
+}
+
+ #imgPerfil {
+	width:	300px;
+	height: 300px;
+}
+
+#parte_izquierda_perfil {
+	display: block;
+	margin-top: 10%;
+	margin-left: 3%;
+}
+
 @media only screen and (max-width:1024px) and (min-width:360px) {
 
 	.navbar-nav {
@@ -79,5 +95,14 @@
 		position: absolute;
 	}
 
+	#imgPerfil {
+	 width:	200px;
+	 height: 200px;
+ }
 
+ #parte_izquierda_perfil {
+	 display: block;
+	 margin-top: 10%;
+	 margin-left: 3%;
+ }
 }
