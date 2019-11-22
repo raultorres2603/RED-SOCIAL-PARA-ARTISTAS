@@ -59,27 +59,30 @@ $(document).ready(function(){
 				} else {
 					alert("Login correcto! Re-carga la página para continuar! ")
 				}
+			}
         });
     });
 
 	$("#cambiarform").click(function(){
-		/**
-		*@summary Mostrar u ocultar dependiendo de la variable formvisible
-		*/
+		var registro = document.getElementById('registro');
+		var login = document.getElementById('login');
+
 			switch(formvisible) {
+
 				case 'Registro':
-				document.getElementById('registro').style.display = 'none';
-				document.getElementById('login').style.display = 'block';
+				registro.style.display = 'none';
+				login.style.display = 'block';
 				formvisible = 'Login';
 				console.log('formvisible = Login');
 				break;
 
 				case 'Login':
-				document.getElementById('registro').style.display = 'block';
-				document.getElementById('login').style.display = 'none';
+				registro.style.display = 'block';
+				login.style.display = 'none';
 				formvisible = 'Registro';
 				console.log('formvisible = Registro');
 				break;
+
 			}
 			 });
 

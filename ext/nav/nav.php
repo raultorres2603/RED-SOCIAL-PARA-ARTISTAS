@@ -129,7 +129,7 @@
 	  </div>
 	  </div>
 	   <center>
-	  	<button id="cambiarform" class="btn btn-danger navbar-btn">Registrar / Iniciar sesión</button>
+	  	<button id="cambiarform" type="button" class="btn btn-danger navbar-btn">Registrar / Iniciar sesión</button>
 		<center>
     </div>
   </div>
