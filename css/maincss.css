@@ -72,6 +72,17 @@
 	margin-left: 3%;
 }
 
+#parte_derecha_perfil {
+	display: block;
+	margin-top: 10%;
+	margin-left: 3%;
+}
+
+#parte_derecha_perfil input {
+	margin-top: 15%;
+	font-size: 25px;
+}
+
 @media only screen and (max-width:1024px) and (min-width:360px) {
 
 	.navbar-nav {

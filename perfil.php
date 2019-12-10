@@ -5,7 +5,6 @@ Name: Notes&Chords
 */
 include("./functions/conexionMysql.php");
 include("./functions/session.php");
-session_start();
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 ?>
 <html>
@@ -46,8 +45,17 @@ include("./ext/links/head.php");
       ?>
       <img id="imgPerfil" src="./perfiles/empty-avatar.png">
       <?php
-    }
+    } Else {
+			?>
+			<img id="imgPerfil" src="./perfiles/<?php echo($usuario)?>">
+			<?php
+		}
        ?>
+		</div>
+		<div id="parte_derecha_perfil" class="pull-left">
+      <input id="nombre" name="nombre" class="form-control" type="text" placeholder="Nombre...">
+			<input id="apellido" name="apellido" class="form-control" type="text" placeholder="Apellido...">
+			<input id="telefono" name="telefono" class="form-control" type="text" placeholder="Telefono...">
 		</div>
 	</div>
 </div>
