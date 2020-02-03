@@ -64,6 +64,12 @@
 		$textohtml	=	$extraido["texto"];
 		echo($textohtml);
 		?>
+    <br>
+    <br>
+    Utilizamos tecnologia <b>Dolby</b> en vuestras covers. Aquí una ejemplo:
+    <audio controls>
+  <source src="ext/media/AUDIO 8D.mp3" type="audio/ogg">
+</audio> 
 		</p>
       </div>
       <div class="modal-footer">
