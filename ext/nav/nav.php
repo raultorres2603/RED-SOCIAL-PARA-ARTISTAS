@@ -69,7 +69,7 @@
     Utilizamos tecnologia <b>Dolby</b> en vuestras covers. Aquí una ejemplo:
     <audio controls>
   <source src="ext/media/AUDIO 8D.mp3" type="audio/ogg">
-</audio> 
+</audio>
 		</p>
       </div>
       <div class="modal-footer">
@@ -79,7 +79,19 @@
 
   </div>
 </div>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
 
+// Create gradient
+var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+grd.addColorStop(0, "blue");
+grd.addColorStop(1, "white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80); 
+</script>
 <!-- MODAL REGISTRO/LOGIN USUARIO -->
 
 <div id="myModal2" class="modal fade" role="dialog">
